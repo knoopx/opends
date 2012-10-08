@@ -1,0 +1,16 @@
+page_header(collection)
+
+#scope_nav do
+#  default
+#  scope :recent
+#  scope :incomplete
+#end
+
+table_for(collection) do
+  column :name do |resource|
+    text_node link_to resource.name, resource
+    small resource.year, class: "muted"
+  end
+end
+
+add_child paginate(collection)

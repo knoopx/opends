@@ -1,0 +1,9 @@
+page_header(collection)
+
+table_for(collection) do
+  resource_class.columns.each do |column|
+    column(column.name)
+  end
+end
+
+add_child paginate(collection) if collection.respond_to?(:total_pages)
