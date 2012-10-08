@@ -9,6 +9,11 @@ gem 'inherited_resources'
 gem 'ruby-taglib2', require: 'taglib2'
 gem 'babosa'
 gem 'nestful'
+gem 'thin'
+
+gem 'rvm-capistrano'
+gem 'capistrano'
+gem 'capistrano_colors'
 
 group :assets do
   gem 'anjlab-bootstrap-rails', require: 'bootstrap-rails'
@@ -17,4 +22,3 @@ group :assets do
   gem 'uglifier'
   gem 'jquery-rails'
 end
-
